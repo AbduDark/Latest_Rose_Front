@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { FaEnvelope, FaPhone } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function InstructorCourse({ course }) {
   const { t } = useTranslation();
@@ -39,23 +40,23 @@ function InstructorCourse({ course }) {
               {course.instructor.phone && (
                 <li className="flex items-center">
                   <FaPhone className="text-pink-600 mr-3" />
-                  <a
-                    href={`tel:${course.instructor.phone}`}
+                  <Link
+                    to={`tel:${course.instructor.phone}`}
                     className="hover:text-pink-600"
                   >
                     {course.instructor.phone}
-                  </a>
+                  </Link>
                 </li>
               )}
               {course.instructor.email && (
                 <li className="flex items-center">
                   <FaEnvelope className="text-pink-600 mr-3" />
-                  <a
-                    href={`mailto:${course.instructor.email}`}
+                  <Link
+                    to={`mailto:${course.instructor.email}`}
                     className="hover:text-pink-600"
                   >
                     {course.instructor.email}
-                  </a>
+                  </Link>
                 </li>
               )}
             </ul>

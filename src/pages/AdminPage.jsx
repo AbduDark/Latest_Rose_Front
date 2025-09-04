@@ -13,7 +13,6 @@ import {
 } from "react-icons/fi";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import CoursesManager from "../components/admin/courses/CoursesManager";
-import LessonsManager from "../components/admin/lessons/LessonsManager";
 import { IoIosNotifications } from "react-icons/io";
 import { useAuth } from "../context/AuthContext";
 import NotificationsManager from "../components/admin/notifications/notificationsManager";
@@ -109,7 +108,7 @@ const AdminPage = () => {
     const contentMap = {
       overview: <DashboardOverview />,
       courses: <CoursesManager />,
-      lessons: <LessonsManager />,
+      lessons: <CoursesManager />,
       subscriptions: <SubscriptionsManager />,
       users: <UserManager />,
       notifications: <NotificationsManager />,

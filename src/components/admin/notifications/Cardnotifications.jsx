@@ -8,6 +8,7 @@ import {
   FiEye,
   FiEyeOff,
 } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 function CardNotification({ notification }) {
   const { t } = useTranslation();
@@ -142,14 +143,12 @@ function CardNotification({ notification }) {
                 {notification.data.url && (
                   <div>
                     {t("adminDashboard.cardNotification.url")}:
-                    <a
-                      href={notification.data.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <Link
+                      to={`/courses/${notification.data.url}/lessons/${notification.data.url}`}
                       className="text-blue-400 hover:text-blue-300 ml-1"
                     >
                       {notification.data.url}
-                    </a>
+                    </Link>
                   </div>
                 )}
               </div>

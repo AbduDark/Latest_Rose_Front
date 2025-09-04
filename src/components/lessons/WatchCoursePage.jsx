@@ -120,6 +120,15 @@ const WatchCoursePage = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row flex-1 overflow-hidden">
+        <div className="lg:w-80 bg-white border-l p-4 overflow-auto">
+          <Sidebar
+            lessons={lessons}
+            currentLessonId={currentLessonId}
+            onSelectLesson={(l) =>
+              navigate(`/courses/${courseId}/lessons/${l.id}`)
+            }
+          />
+        </div>
         <div className="flex flex-col flex-1 p-4 gap-4 overflow-auto">
           {currentLesson?.video_url ? (
             <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
@@ -152,15 +161,6 @@ const WatchCoursePage = () => {
             </div>
           )}
           {currentLessonId && <CommentLesson lessonId={currentLessonId} />}
-        </div>
-        <div className="lg:w-80 bg-white border-l p-4 overflow-auto">
-          <Sidebar
-            lessons={lessons}
-            currentLessonId={currentLessonId}
-            onSelectLesson={(l) =>
-              navigate(`/courses/${courseId}/lessons/${l.id}`)
-            }
-          />
         </div>
       </div>
     </div>

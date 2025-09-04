@@ -8,6 +8,10 @@ export const theme = {
       primary: colors.pink[500],
       secondary: colors.indigo[500],
     },
+    fontFamily: {
+      arabic: ["Cairo", "sans-serif"], 
+      sans: ["Inter", "ui-sans-serif", "system-ui"],
+    },
   },
 };
 export const plugins = [];

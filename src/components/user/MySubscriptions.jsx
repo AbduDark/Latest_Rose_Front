@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   getMySubscriptions,
   cancelSubscription,
   renewSubscription,
 } from "../../api/subscriptions";
 import { useAuth } from "../../context/AuthContext";
+import i18next from "i18next";
 
 const MySubscriptions = () => {
   const { t } = useTranslation();
@@ -112,12 +113,12 @@ const MySubscriptions = () => {
           <div className="mb-8 p-4 bg-red-100 text-red-800 rounded-lg text-center">
             {error}
             {error.includes("log in") && (
-              <a
-                href="/auth/login"
+              <Link
+                to="/auth/login"
                 className="ml-2 text-indigo-600 hover:underline"
               >
                 {t("auth.login.loginButton")}
-              </a>
+              </Link>
             )}
           </div>
         )}
@@ -147,12 +148,12 @@ const MySubscriptions = () => {
               {t("mySubscriptions.noSubscriptions")}.{" "}
               {t("mySubscriptions.explore")}
             </p>
-            <a
-              href="/courses"
+            <Link
+              to="/courses"
               className="mt-6 inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition-colors duration-200 text-sm font-semibold"
             >
               {t("mySubscriptions.explore")}
-            </a>
+            </Link>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -240,12 +241,12 @@ const MySubscriptions = () => {
                   </p>
                 </div>
                 <div className="mt-6 space-y-2">
-                  <a
-                    href={`/courses/${sub.course_id}`}
+                  <Link
+                    to={`/courses/${sub.course_id}/lessons/`}
                     className="inline-block w-full text-center bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors duration-200 text-sm font-semibold"
                   >
                     {t("mySubscriptions.viewCourse")}
-                  </a>
+                  </Link>
 
                   {/* Action Buttons */}
                   <div className="flex space-x-2">
@@ -297,7 +298,11 @@ const MySubscriptions = () => {
                           placeholder={t("enrollCourse.parentPhonePlaceholder")}
                           required
                         />
-                        <div className="flex space-x-2">
+                        <div
+                          className={`flex space-x-2 ${
+                            i18next.language === "ar" ? "space-x-reverse" : ""
+                          }`}
+                        >
                           <button
                             onClick={() => handleRenewSubscription(sub.id)}
                             disabled={actionLoading === sub.id}

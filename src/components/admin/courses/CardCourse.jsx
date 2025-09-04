@@ -1,6 +1,6 @@
 import React from "react";
 import { FiBook, FiClock, FiEdit, FiTrash2, FiStar } from "react-icons/fi";
-
+import ImageNotFound from "../../../assets/images/ImageNotFound.png";
 function CardCourse({ course, onEdit, onDelete }) {
   const getLevelColor = (level) => {
     switch (level) {
@@ -42,10 +42,7 @@ function CardCourse({ course, onEdit, onDelete }) {
     <div className="bg-gray-800 rounded-xl shadow-lg border border-gray-700 hover:shadow-xl transition-all duration-300 overflow-hidden hover:border-gray-600">
       <div className="relative h-48 overflow-hidden">
         <img
-          src={
-            course.image_url ||
-            "https://via.placeholder.com/400x200?text=Course+Image"
-          }
+          src={course.image_url || ImageNotFound}
           alt={course.title}
           className="w-full h-full object-cover"
         />

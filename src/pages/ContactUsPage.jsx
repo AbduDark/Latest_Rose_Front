@@ -1,6 +1,7 @@
 import i18next from "i18next";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const ContactUsPage = () => {
   const { t } = useTranslation();
@@ -26,9 +27,9 @@ const ContactUsPage = () => {
       </div>
 
       {/* Content */}
-      <div className="relative -mt-20 md:-mt-60 mb-40">
+      <div className="relative -mt-20 md:-mt-52 mb-40">
         <div className="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white shadow-lg rounded-lg p-6 md:p-8">
+          <div className="bg-white rounded-lg p-6 md:p-8 shadow-md shadow-gray-200">
             <div className="flex justify-center flex-col md:flex-row">
               <div className="md:col-span-1">
                 <div>
@@ -83,12 +84,12 @@ const ContactUsPage = () => {
                         <h3 className="text-lg font-semibold text-gray-800">
                           {t("contactPage.phone")}
                         </h3>
-                        <a
-                          href="tel:+201126576004"
+                        <Link
+                          to="tel:+201126576004"
                           className="text-gray-600 italic hover:underline"
                         >
                           +201126576004
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <hr className="my-2" />
@@ -118,12 +119,12 @@ const ContactUsPage = () => {
                         <h3 className="text-lg font-semibold text-gray-800">
                           {t("contactPage.email")}
                         </h3>
-                        <a
-                          href="mailto:info@example.com"
+                        <Link
+                          to="mailto:info@example.com"
                           className="text-gray-600 text-xs md:text-lg italic hover:underline"
                         >
                           mohamedgomaafathi@gmail.com
-                        </a>
+                        </Link>
                       </div>
                     </li>
                     <hr className="my-2" />

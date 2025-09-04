@@ -5,6 +5,7 @@ import { useCourse } from "../../context/CourseContext";
 import { useNavigate } from "react-router-dom";
 import Loader from "../common/Loader";
 import i18next from "i18next";
+import ImageNotFound from "../../assets/images/ImageNotFound.png";
 
 function CardCourse() {
   const { t } = useTranslation();
@@ -53,7 +54,7 @@ function CardCourse() {
   if (error)
     return (
       <div className="text-center my-9 text-red-600">
-        {t("cardCourse.error")}: {error}
+        {t("cardCourse.error")}
       </div>
     );
 
@@ -73,7 +74,7 @@ function CardCourse() {
             className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 hover:-translate-y-1 cursor-pointer"
           >
             <img
-              src={course.image_url || "/default-course.jpg"}
+              src={course.image_url || ImageNotFound}
               alt={course.title}
               className="w-full h-48 object-cover"
             />

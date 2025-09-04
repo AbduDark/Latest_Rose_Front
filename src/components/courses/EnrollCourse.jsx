@@ -9,7 +9,7 @@ import {
 import { useParams } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import i18next from "i18next";
-
+import ImageNotFound from "../../assets/images/ImageNotFound.png"
 function EnrollCourse() {
   const { t } = useTranslation();
   const [enrollError, setEnrollError] = useState(null);
@@ -106,7 +106,7 @@ function EnrollCourse() {
     <div>
       {/* COURSE CARD */}
       <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-6">
-        <img src={course.image_url} alt="Course Thumbnail" className="w-full" />
+        <img src={course.image_url || ImageNotFound} alt="Course Thumbnail" className="w-full" />
         <div className="p-4">
           {enrollError && (
             <p className="text-red-500 text-sm mb-3">{enrollError}</p>
@@ -209,25 +209,11 @@ function EnrollCourse() {
             </div>
           )}
 
-          {!subscriptionStatus?.subscription?.is_active ? (
-            <button
-              onClick={() => setShowSubscriptionForm(!showSubscriptionForm)}
-              className="w-full bg-pink-600 hover:bg-pink-700 text-white py-3 px-4 rounded-lg flex items-center justify-center mb-3"
-            >
-              <FaGraduationCap
-                className={`${i18next.language === "ar" ? "ml-2" : "mr-2"}`}
-              />
-              {showSubscriptionForm
-                ? t("enrollCourse.cancel")
-                : t("enrollCourse.enrollNow")}
-            </button>
-          ) : null}
-
           {showSubscriptionForm && (
             <button
               onClick={handleEnroll}
               disabled={enrolling}
-              className="w-full bg-green-600 hover:bg-green-700 text-white py-3 px-4 rounded-lg flex items-center justify-center"
+              className="mb-3 w-full bg-green-600 hover:bg-green-700 text-white py-3 px-4 rounded-lg flex items-center justify-center"
             >
               <FaGraduationCap
                 className={`${i18next.language === "ar" ? "ml-2" : "mr-2"}`}
@@ -237,6 +223,20 @@ function EnrollCourse() {
                 : t("enrollCourse.confirmSubscription")}
             </button>
           )}
+
+          {!subscriptionStatus?.subscription?.is_active ? (
+            <button
+              onClick={() => setShowSubscriptionForm(!showSubscriptionForm)}
+              className="w-full bg-pink-600 hover:bg-pink-700 text-white py-3 px-4 rounded-lg flex items-center justify-center"
+            >
+              <FaGraduationCap
+                className={`${i18next.language === "ar" ? "ml-2" : "mr-2"}`}
+              />
+              {showSubscriptionForm
+                ? t("enrollCourse.cancel")
+                : t("enrollCourse.enrollNow")}
+            </button>
+          ) : null}
         </div>
       </div>
 
@@ -249,7 +249,9 @@ function EnrollCourse() {
           <li className="flex justify-between items-center py-2">
             <div className="flex items-center">
               <FaMoneyCheck
-                className={`text-pink-600 ${i18next.language === "ar" ? "ml-3" : "mr-3"}`}
+                className={`text-pink-600 ${
+                  i18next.language === "ar" ? "ml-3" : "mr-3"
+                }`}
               />
               <span>{t("enrollCourse.price")}</span>
             </div>
@@ -258,7 +260,9 @@ function EnrollCourse() {
           <li className="flex justify-between items-center py-2">
             <div className="flex items-center">
               <FaBook
-                className={`text-pink-600 ${i18next.language === "ar" ? "ml-3" : "mr-3"}`}
+                className={`text-pink-600 ${
+                  i18next.language === "ar" ? "ml-3" : "mr-3"
+                }`}
               />
               <span>{t("enrollCourse.episodes")}</span>
             </div>
@@ -268,7 +272,9 @@ function EnrollCourse() {
           <li className="flex justify-between items-center py-2">
             <div className="flex items-center">
               <FaClock
-                className={`text-pink-600 ${ i18next.language === "ar" ? "ml-3" : "mr-3"}`}
+                className={`text-pink-600 ${
+                  i18next.language === "ar" ? "ml-3" : "mr-3"
+                }`}
               />
               <span>{t("enrollCourse.date")}</span>
             </div>

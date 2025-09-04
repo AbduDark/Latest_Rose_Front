@@ -3,27 +3,18 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
-  build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    sourcemap: false,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
-        },
-      },
-    },
+  define: {
+    "process.env": process.env,
   },
   server: {
-    host: '0.0.0.0',
-    port: 5000,
-    allowedHosts: 'all',
-    strictPort: true
+    host: "localhost",
+    port: 5173,
+    strictPort: true,
+    watch: {
+      usePolling: true,
+    },
   },
-  preview: {
-    host: '0.0.0.0',
-    port: 5000,
+  optimizeDeps: {
+    include: ["react-player", "tailwindcss"],
   },
 });

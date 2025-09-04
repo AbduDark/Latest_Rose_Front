@@ -1,11 +1,11 @@
 {
   "introSection": {
-    "title": "The smartest way to <span>learn</span> for high school success",
-    "description": "Join our platform designed for high school students. Access courses, practice exams, and learning resources to achieve your goals.",
-    "startCourse": "Start Course",
-    "signup": "Create Student Account",
-    "languageSelector": "Select Language",
-    "imageAlt": "High school learning introduction"
+    "title": "Your Smart Path to Academic Success",
+    "description": "A platform offering innovative educational videos that help high school students master the curriculum easily and follow a structured approach to achieve top results.",
+    "startCourse": "Start Learning",
+    "signup": "Create Account",
+    "languageSelector": "Choose Language",
+    "imageAlt": "High school success learning introduction"
   },
   "header": {
     "home": "Home",
@@ -22,24 +22,24 @@
     "searchPlaceholder": "Search courses..."
   },
   "features": {
-    "title": "Features That Can Avail By Everyone",
-    "subtitle": "If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.",
+    "title": "Powerful Learning Features",
+    "subtitle": "Get everything you need to succeed in Egypt’s General Secondary Education. From expert video lessons to step-by-step learning, our platform is built to help you achieve your academic goals.",
     "instantAccess": {
-      "title": "Instant Access After Purchase",
-      "description": "Once you purchase a course, your account is activated immediately and you can start learning right away without any delays."
+      "title": "Instant Access After Sign Up",
+      "description": "Create your account and start learning immediately—no delays, no complications."
     },
     "videoLessons": {
-      "title": "Video Lessons & Downloadable Notes",
-      "description": "Each course includes high-quality video lessons and downloadable PDF notes covering the full curriculum in a clear and organized way."
+      "title": "Educational Video Lessons",
+      "description": "Each course includes high-quality video lessons that cover the entire curriculum in a clear and structured way."
     },
-    "interactiveQuizzes": {
-      "title": "Interactive Quizzes & Assessments",
-      "description": "After each unit, you'll find interactive quizzes to test your understanding and track your progress effectively."
+    "learningSupport": {
+      "title": "Learn Step by Step",
+      "description": "Follow the lessons in the right order and build your knowledge gradually until you master the entire curriculum."
     }
   },
   "popularCourses": {
-    "title": "Trending courses",
-    "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    "title": "Popular Courses",
+    "subtitle": "Explore the most in-demand courses among high school students and start your journey to excellence.",
     "more": "More"
   },
   "recentCourses": {
@@ -107,67 +107,51 @@
   },
   "aboutPage": {
     "title": "About Us",
-    "subtitle": "Welcome to Eduction Empowering minds. Shaping the future. At Eduction, we are committed to academic excellence, groundbreaking research, and a vibrant community that fosters innovation and growth. Explore our programs, meet our faculty, and discover a campus where your potential thrives.",
-    "historyTitle": "The history of Eduction",
-    "historyText1": "On September 8, 1971, Eduction, the first college in the American colonies, was founded in Cambridge, Massachusetts. Eduction University was officially founded by a vote by the Great and General Court of the Massachusetts Bay Colony.",
-    "historyText2": "Eduction endowment started with John Eduction initial donation of 400 books and half his estate, but in 1721, Thomas Hollis began the now standard practice of requiring that a donation be used for a specific purpose when he donated money for \"a Divinity Professor, to read lectures in the Halls to the students.\"",
+    "subtitle": "Welcome to Rose Academy – the educational platform designed exclusively for Egypt’s high school students. Our mission is to simplify learning, provide expert guidance, and help every student reach their full potential in the General Secondary Education stage.",
+    "historyTitle": "Our Story",
+    "historyText1": "Rose Academy was created with one clear goal: to support Egypt’s high school students in mastering their curriculum with modern, easy-to-understand resources.",
+    "historyText2": "From high-quality video lessons to step-by-step learning support, our platform has grown into a trusted companion for thousands of students preparing for success in the General Secondary Education exams.",
     "contactUs": "Contact Us",
-    "faqTitle": "University FAQs",
-    "faqSubtitle": "Find answers to common questions about Website University programs, admissions, and student life.",
+    "faqTitle": "FAQs",
+    "faqSubtitle": "Find answers to common questions about our platform, courses, and subscriptions.",
     "faqs": [
       {
-        "question": "How do I apply to Future Vision University?",
-        "answer": "You can apply online through our admissions portal by filling out the application form and submitting the required documents, such as transcripts, personal statement, and recommendation letters."
+        "question": "Do I need a subscription to access the lessons?",
+        "answer": "Yes, access to all lessons requires a subscription."
       },
       {
-        "question": "What programs does Future Vision University offer?",
-        "answer": "We offer a variety of undergraduate and postgraduate programs in fields such as Computer Science, Engineering, Business Administration, Medicine, and the Arts."
+        "question": "How do I subscribe?",
+        "answer": "You can subscribe easily using Vodafone Cash. After payment, your account will be activated immediately."
       },
       {
-        "question": "What are the admission requirements?",
-        "answer": "Admission requirements vary by program, but generally include a completed application, high school diploma or equivalent, transcripts, and a minimum GPA. Some programs may require entrance exams or interviews."
+        "question": "What type of content do you provide?",
+        "answer": "We provide high-quality video lessons tailored to Egypt’s General Secondary Education curriculum."
       },
       {
-        "question": "How much is tuition at Future Vision University?",
-        "answer": "Tuition fees depend on the program and level of study. On average, undergraduate programs start from $3,000 per semester. Please refer to our tuition page for detailed information."
+        "question": "Can I access the courses anytime?",
+        "answer": "Yes, our platform is available 24/7 so you can study at your own pace."
       },
       {
-        "question": "Does Future Vision University offer online courses?",
-        "answer": "Yes, we offer a range of fully online and hybrid courses for students who prefer flexible learning options."
-      },
-      {
-        "question": "What campus facilities are available?",
-        "answer": "Our campus includes modern lecture halls, laboratories, libraries, computer centers, sports complexes, student lounges, and on-campus housing."
-      },
-      {
-        "question": "Are scholarships available at Future Vision University?",
-        "answer": "Yes, we offer merit-based and need-based scholarships for both domestic and international students. Application deadlines and criteria are listed on the scholarships page."
-      },
-      {
-        "question": "What student support services are offered?",
-        "answer": "We provide academic advising, career counseling, mental health services, tutoring, and a dedicated student success center."
-      },
-      {
-        "question": "How do I contact the admissions office?",
-        "answer": "You can reach the admissions office via email at mohamedgomaafathi@gmail.com or call us at +20 112 657 6004. Office hours are Sunday to Thursday, 9:00 AM to 4:00 PM."
+        "question": "How do I contact support?",
+        "answer": "You can find all the ways to reach us on the 'Contact Us' page for immediate support."
       }
     ]
   },
   "contactPage": {
     "title": "Contact Us",
-    "subtitle": "We're here to help. Have questions about admissions, programs, or campus life? Reach out to us—we're happy to assist you.",
-    "contactInfo": "Contact Info",
+    "subtitle": "If you have any questions about subscriptions, lessons, or payment methods, feel free to reach out. We’re always happy to help.",
+    "contactInfo": "Contact Information",
     "phone": "Phone",
     "email": "Email",
     "location": "Location",
-    "followOn": "Follow on:",
+    "followOn": "Follow us on:",
     "socialLinks": {
       "facebook": "Facebook",
       "twitter": "Twitter",
       "linkedin": "LinkedIn",
-      "github": "Github",
+      "github": "GitHub",
       "telegram": "Telegram",
-      "mail": "Mail"
+      "mail": "Email"
     }
   },
   "courseDetailPage": {
@@ -182,7 +166,7 @@
   },
   "headerAllCourses": {
     "title": "Courses",
-    "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolor quibusdam sit sequi illo."
+    "subtitle": "Browse all available lessons on Rose Academy, designed specifically for high school students."
   },
   "cardCourse": {
     "noRating": "No rating",

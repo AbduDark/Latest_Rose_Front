@@ -33,8 +33,10 @@ const CourseDetailPage = () => {
 
   if (!course) {
     return (
-      <div className="py-8 text-center text-white bg-gradient-to-r from-secondary to-primary">
-        {t("courseDetailPage.courseNotFound")}
+      <div className="flex justify-center items-center h-screen w-full">
+        <div className="py-8 text-center  w-full text-white bg-gradient-to-r from-secondary to-primary">
+          {t("courseDetailPage.courseNotFound")}
+        </div>
       </div>
     );
   }

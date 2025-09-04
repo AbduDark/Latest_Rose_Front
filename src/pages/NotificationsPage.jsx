@@ -7,6 +7,7 @@ import {
   deleteNotification,
 } from "../api/notifications";
 import { useNotifications } from "../context/NotificationContext";
+import { Link } from "react-router-dom";
 
 const NotificationsPage = () => {
   const { t } = useTranslation();
@@ -238,12 +239,12 @@ const NotificationsPage = () => {
                           {t("notifications.delete")}
                         </button>
                         {notification.data?.url && (
-                          <a
-                            href={notification.data.url}
+                          <Link
+                            to={notification.data.url}
                             className="text-sm text-green-600 hover:text-green-800 font-medium"
                           >
                             {t("notifications.viewDetails")}
-                          </a>
+                          </Link>
                         )}
                       </div>
                     </div>

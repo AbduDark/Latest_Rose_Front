@@ -29,8 +29,8 @@ const FeaturesSection = () => {
     {
       id: 3,
       icon: <FaMedal className="text-4xl" />,
-      title: t("features.interactiveQuizzes.title"),
-      description: t("features.interactiveQuizzes.description"),
+      title: t("features.learningSupport.title"),
+      description: t("features.learningSupport.description"),
       offset: "md:mt-48",
     },
   ];
